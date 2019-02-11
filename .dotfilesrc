@@ -1,0 +1,7 @@
+[dotfiles]
+ignore = [
+    'LICENSE',
+    'README.md',
+    '.git',
+    '.gitignore',
+    '*.swp']
