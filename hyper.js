@@ -20,6 +20,12 @@ module.exports = {
     // font weight for bold characters: 'normal' or 'bold'
     fontWeightBold: 'bold',
 
+    // line height as a relative unit
+    lineHeight: 1,
+
+    // letter spacing as a relative unit
+    letterSpacing: 0,
+
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
 
@@ -85,6 +91,8 @@ module.exports = {
       lightWhite: '#FFFFFF',
     },
 
+    scrollback: 5000,
+
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
     //
@@ -139,8 +147,6 @@ module.exports = {
   localPlugins: [],
 
   keymaps: {
-    // Example
-    // 'window:devtools': 'cmd+alt+o',
     "window:devtools": "ctrl+shift+i",
     "window:reload": "ctrl+shift+r",
     "window:reloadFull": "ctrl+shift+f5",
@@ -190,6 +196,4 @@ module.exports = {
     "editor:break": "ctrl+c",
     "plugins:update": "ctrl+shift+u"
   },
-
-  scrollback: 5000,
 };
