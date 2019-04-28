@@ -5,3 +5,5 @@ ignore = [
     '.git',
     '.gitignore',
     '*.swp']
+packages = [
+  'config']
