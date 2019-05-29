@@ -32,7 +32,7 @@ ZSH_THEME="gnzh"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -86,6 +86,10 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+if [[ "$XDG_SESSION_TYPE" -eq "wayland" ]]; then
+  export QT_QPA_PLATFORM=wayland
+fi
 
 export PATH="$PATH:$HOME/.local/bin"
 
