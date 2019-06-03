@@ -72,6 +72,7 @@ export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+export MAKEFLAGS="-j$(nproc)"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
