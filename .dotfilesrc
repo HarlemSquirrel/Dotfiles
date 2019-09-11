@@ -1,9 +1,10 @@
 [dotfiles]
 ignore = [
-    'LICENSE',
-    'README.md',
-    '.git',
-    '.gitignore',
-    '*.swp']
+  'LICENSE',
+  'README.md',
+  '.git',
+  '.gitignore',
+  '*.swp']
 packages = [
+  'atom'
   'config']

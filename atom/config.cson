@@ -1,0 +1,45 @@
+"*":
+  "atom-beautify":
+    erb:
+      indent_size: 2
+    general:
+      _analyticsUserId: "bd96c179-541c-4e53-8f2a-8189a230ac59"
+    js:
+      indent_size: 2
+    xml:
+      indent_size: 2
+  core:
+    disabledPackages: [
+      "language-gfm"
+      "language-archlinux"
+    ]
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "limited"
+  editor:
+    invisibles: {}
+    preferredLineLength: 100
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "01282463-2252-5447-2ba8-a7cdc706ce69"
+  "git-plus":
+    general:
+      _analyticsUserId: "1d989405-3954-45ec-98e3-8df89ce765b6"
+  "markdown-preview":
+    breakOnSingleNewline: true
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.md"
+    ]
+    locales: [
+      "en-US"
+    ]
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
