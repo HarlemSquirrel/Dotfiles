@@ -6,5 +6,5 @@ ignore = [
   '.gitignore',
   '*.swp']
 packages = [
-  'atom'
+  'atom',
   'config']
