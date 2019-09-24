@@ -10,7 +10,6 @@
       indent_size: 2
   core:
     disabledPackages: [
-      "language-gfm"
       "language-archlinux"
     ]
     packagesWithKeymapsDisabled: []
