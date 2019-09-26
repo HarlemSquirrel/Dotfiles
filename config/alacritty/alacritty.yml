@@ -1,18 +1,16 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator
-
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
-# set by alacritty it self.
-env:
+# set by alacritty itself.
+#env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  TERM: alacritty
-  # TERM: xterm-256color
+  #TERM: xterm-256color
 
 window:
   # Window dimensions (changes require restart)
@@ -90,7 +88,6 @@ scrolling:
 
   # Scroll to the bottom when new text is written to the terminal.
   auto_scroll: false
-
 
 # Spaces per Tab (changes require restart)
 #
@@ -281,26 +278,24 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.9
+background_opacity: 0.8
 
 # Mouse bindings
 #
-# Currently doesn't support modifiers. Both the `mouse` and `action` fields must
-# be specified.
+# Available fields:
+#   - mouse
+#   - action
+#   - mods (optional)
 #
 # Values for `mouse`:
-# - Middle
-# - Left
-# - Right
-# - Numeric identifier such as `5`
+#   - Middle
+#   - Left
+#   - Right
+#   - Numeric identifier such as `5`
 #
-# Values for `action`:
-# - Paste
-# - PasteSelection
-# - Copy (TODO)
-mouse_bindings:
-  - mouse: Middle
-    action: PasteSelection
+# All available `mods` and `action` values are documented in the key binding
+# section.
+# mouse_bindings:
   # - { mouse: Middle, action: PasteSelection }
 
 mouse:
@@ -309,13 +304,11 @@ mouse:
   # The `double_click` and `triple_click` settings control the time
   # alacritty should wait for accepting multiple clicks as one double
   # or triple click.
-  double_click:
-    threshold: 300
-  triple_click:
-    threshold: 300
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
 
   # If this is `true`, the cursor is temporarily hidden when typing.
-  hide_when_typing: false
+  hide_when_typing: true
 
   url:
     # URL launcher
@@ -518,13 +511,13 @@ key_bindings:
   # (Windows/Linux only)
   - { key: V,        mods: Control|Shift, action: Paste            }
   - { key: C,        mods: Control|Shift, action: Copy             }
-  # - { key: Insert,   mods: Shift,         action: PasteSelection   }
-  # - { key: Key0,     mods: Control,       action: ResetFontSize    }
-  # - { key: Equals,   mods: Control,       action: IncreaseFontSize }
-  # - { key: Add,      mods: Control,       action: IncreaseFontSize }
-  # - { key: Subtract, mods: Control,       action: DecreaseFontSize }
-  # - { key: Minus,    mods: Control,       action: DecreaseFontSize }
-  # - { key: Return,   mods: Alt,           action: ToggleFullscreen }
+  #- { key: Insert,   mods: Shift,         action: PasteSelection   }
+  #- { key: Key0,     mods: Control,       action: ResetFontSize    }
+  #- { key: Equals,   mods: Control,       action: IncreaseFontSize }
+  #- { key: Add,      mods: Control,       action: IncreaseFontSize }
+  #- { key: Subtract, mods: Control,       action: DecreaseFontSize }
+  #- { key: Minus,    mods: Control,       action: DecreaseFontSize }
+  #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
 
   # (macOS only)
   #- { key: Key0,   mods: Command,         action: ResetFontSize    }
@@ -540,8 +533,8 @@ key_bindings:
   #- { key: W,      mods: Command,         action: Quit             }
   #- { key: F,      mods: Command|Control, action: ToggleFullscreen }
 
-  # - { key: Paste,                   action: Paste                            }
-  # - { key: Copy,                    action: Copy                             }
+  - { key: Paste,                   action: Paste                            }
+  - { key: Copy,                    action: Copy                             }
   - { key: L,        mods: Control, action: ClearLogNotice                   }
   - { key: L,        mods: Control, chars: "\x0c"                            }
   - { key: Home,     mods: Alt,     chars: "\x1b[1;3H"                       }
