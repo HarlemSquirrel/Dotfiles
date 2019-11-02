@@ -384,7 +384,7 @@ endfunction
 " vim-python
 augroup vimrc-python
   autocmd!
-  autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 colorcolumn=79
+  autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 colorcolumn=100
       \ formatoptions+=croq softtabstop=4
       \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 augroup END
@@ -420,7 +420,7 @@ let g:rubycomplete_rails = 1
 augroup vimrc-ruby
   autocmd!
   autocmd BufNewFile,BufRead *.rb,*.rbw,*.gemspec setlocal filetype=ruby
-  autocmd FileType ruby set tabstop=2|set shiftwidth=2|set expandtab softtabstop=2
+  autocmd FileType ruby set tabstop=2|set shiftwidth=2|set expandtab softtabstop=2 colorcolumn=100
 augroup END
 
 let g:tagbar_type_ruby = {
