@@ -37,7 +37,7 @@ COMPLETION_WAITING_DOTS="true"
 # Disable magic functions
 # This can help with the bracketed-paste-magic:zle pasting issue
 # https://github.com/robbyrussell/oh-my-zsh/issues/5569#issuecomment-491504337
-DISABLE_MAGIC_FUNCTIONS=true
+# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
