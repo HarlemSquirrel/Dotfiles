@@ -7,4 +7,5 @@ ignore = [
   '*.swp']
 packages = [
   'atom',
-  'config']
+  'config',
+  'siege']
