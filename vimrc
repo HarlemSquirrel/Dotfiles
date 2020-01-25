@@ -118,8 +118,14 @@ endif
 
 
 " Add a bit extra margin to the left
-set foldcolumn=1
+"set foldcolumn=1
 
+" Show invisible characters
+set list
+set listchars=eol:⏎,tab:▸·,trail:␠,nbsp:⎵
+
+" Disable automatic comment insertion
+set formatoptions-=cro
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
