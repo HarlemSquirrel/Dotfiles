@@ -122,7 +122,7 @@ endif
 
 " Show invisible characters
 set list
-set listchars=eol:⏎,tab:▸·,trail:␠,nbsp:⎵
+set listchars=eol:⏎,tab:→·,trail:␠,space:·,nbsp:␣
 
 " Disable automatic comment insertion
 set formatoptions-=cro
@@ -158,6 +158,10 @@ set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
+
+" Invisible characters
+hi NonText ctermfg=darkgray
+hi SpecialKey ctermfg=darkgray
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
