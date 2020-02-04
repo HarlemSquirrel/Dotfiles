@@ -97,7 +97,9 @@ if [[ "$XDG_SESSION_TYPE" -eq "wayland" ]]; then
   export QT_QPA_PLATFORM=wayland
 fi
 
-export PATH="$PATH:$HOME/.local/bin"
+if [[ $PATH != *$HOME/.local/bin* ]]; then
+  export PATH="$PATH:$HOME/.local/bin"
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
