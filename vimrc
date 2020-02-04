@@ -121,7 +121,7 @@ endif
 "set foldcolumn=1
 
 " Show invisible characters
-set list
+"set list
 set listchars=eol:⏎,tab:→·,trail:␠,space:·,nbsp:␣
 
 " Disable automatic comment insertion
