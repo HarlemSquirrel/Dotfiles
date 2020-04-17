@@ -3,5 +3,10 @@
 # https://ruby-doc.org/stdlib/libdoc/irb/rdoc/IRB.html
 
 # https://github.com/amazing-print/amazing_print
-require 'amazing_print'
+if Dir.exist? File.join(Dir.home, 'code/amazing_print/lib/amazing_print')
+  # Load from local source code
+  require File.join(Dir.home, 'code/amazing_print/lib/amazing_print')
+else
+  require 'amazing_print'
+end
 AmazingPrint.irb!
