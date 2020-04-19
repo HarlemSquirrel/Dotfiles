@@ -11,6 +11,8 @@
   core:
     disabledPackages: [
       "language-archlinux"
+      "github"
+      "whitespace"
     ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
@@ -22,9 +24,14 @@
     softWrap: true
   "exception-reporting":
     userId: "01282463-2252-5447-2ba8-a7cdc706ce69"
+  "file-icons":
+    coloured: false
   "git-plus":
     general:
       _analyticsUserId: "1d989405-3954-45ec-98e3-8df89ce765b6"
+  "linter-ui-default":
+    panelHeight: 300
+    useBusySignal: false
   "markdown-preview":
     breakOnSingleNewline: true
   "spell-check":
@@ -39,6 +46,9 @@
     locales: [
       "en-US"
     ]
+  "tool-bar":
+    position: "Left"
   "tree-view": {}
   welcome:
     showOnStartup: false
+  whitespace: {}
