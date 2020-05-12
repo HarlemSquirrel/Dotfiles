@@ -158,6 +158,8 @@ endif
 "catch
 "endtry
 
+let g:darkspace_italics=1
+
 set background=dark
 set termguicolors
 colorscheme darkspace
