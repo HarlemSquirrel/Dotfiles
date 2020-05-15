@@ -164,6 +164,14 @@ set background=dark
 set termguicolors
 colorscheme darkspace
 
+" For Alacritty and tmux
+" https://github.com/alacritty/alacritty/issues/109#issuecomment-440353106
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 " Set extra options when running in GUI mode
 "if has("gui_running")
 "    set guioptions-=T
