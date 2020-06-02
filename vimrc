@@ -30,7 +30,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Colors theme
-Plug 'https://github.com/yuqio/vim-darkspace'
+Plug 'https://github.com/ts-26a/vim-darkspace'
 
 " Initialize plugin system
 call plug#end()
@@ -171,6 +171,10 @@ if exists('+termguicolors')
   let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
+
+" Spell check colors
+hi clear SpellBad
+hi SpellBad cterm=underline ctermbg=red ctermfg=white
 
 " Set extra options when running in GUI mode
 "if has("gui_running")
@@ -450,6 +454,14 @@ let g:airline#extensions#virtualenv#enabled = 1
 " Default highlight is better than polyglot
 let g:polyglot_disabled = ['python']
 let python_highlight_all = 1
+
+" Markdown
+" Enable spellcheck
+augroup markdownSpell
+    autocmd!
+    autocmd FileType markdown setlocal spell spelllang=en_us
+    autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
+augroup END
 
 
 " ruby
