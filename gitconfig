@@ -1,0 +1,5 @@
+[user]
+	email = harlemsquirrel@mccormack.tech
+	name = Kevin McCormack
+[pull]
+	rebase = false
