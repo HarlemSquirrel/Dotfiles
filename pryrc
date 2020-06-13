@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 ##
 # Pry initialization
 
@@ -8,4 +10,8 @@ if Dir.exist? File.join(Dir.home, 'code/amazing_print/lib/amazing_print')
 else
   require 'amazing_print'
 end
+
+AmazingPrint.defaults = {
+  indent: 2
+}
 AmazingPrint.pry!
