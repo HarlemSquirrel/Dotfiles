@@ -32,6 +32,10 @@ call plug#begin('~/.vim/plugged')
 " Colors theme
 Plug 'https://github.com/ts-26a/vim-darkspace'
 
+" fzf
+" https://github.com/junegunn/fzf/blob/master/README-VIM.md
+Plug 'junegunn/fzf'
+
 " Initialize plugin system
 call plug#end()
 
