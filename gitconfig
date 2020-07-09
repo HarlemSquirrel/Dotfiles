@@ -3,3 +3,5 @@
 	name = Kevin McCormack
 [pull]
 	rebase = false
+[color]
+	ui = auto
