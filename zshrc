@@ -93,7 +93,7 @@ export MAKEFLAGS="-j$(nproc)"
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
-if [[ "$XDG_SESSION_TYPE" -eq "wayland" ]]; then
+if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
   export QT_QPA_PLATFORM=wayland
 fi
 
