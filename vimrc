@@ -295,6 +295,7 @@ endtry
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " NERDTree
+let NERDTreeShowHidden=1
 map <C-\> :NERDTreeToggle<CR>
 
 
