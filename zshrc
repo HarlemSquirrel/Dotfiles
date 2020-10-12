@@ -91,6 +91,12 @@ export MAKEFLAGS="-j$(nproc)"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+function update_tutanota_appimage() {
+  cd ~
+  wget -N https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage
+  cd -
+}
+
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
 if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
