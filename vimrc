@@ -36,6 +36,9 @@ Plug 'https://github.com/ts-26a/vim-darkspace'
 " https://github.com/junegunn/fzf/blob/master/README-VIM.md
 Plug 'junegunn/fzf'
 
+" JavaScript
+Plug 'pangloss/vim-javascript'
+
 " Initialize plugin system
 call plug#end()
 
