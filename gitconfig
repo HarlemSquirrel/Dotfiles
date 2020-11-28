@@ -2,6 +2,6 @@
 	email = harlemsquirrel@mccormack.tech
 	name = Kevin McCormack
 [pull]
-	rebase = false
+	ff = only
 [color]
 	ui = auto
