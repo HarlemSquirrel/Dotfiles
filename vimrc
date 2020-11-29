@@ -39,6 +39,9 @@ Plug 'editorconfig/editorconfig-vim'
 " https://github.com/junegunn/fzf/blob/master/README-VIM.md
 Plug 'junegunn/fzf'
 
+" https://github.com/preservim/nerdtree
+Plug 'preservim/nerdtree'
+
 " JavaScript
 Plug 'pangloss/vim-javascript'
 
