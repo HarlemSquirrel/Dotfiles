@@ -117,5 +117,5 @@ elif [ -f /usr/share/nvm/init-nvm.sh ]; then
 fi
 
 # Weather
-alias weather-hawley="curl \"wttr.in/Hawley\+PA\""
+alias weather-hawley="curl \"wttr.in/Hawley+PA\""
 alias weather-nyc="curl wttr.in/NYC"
