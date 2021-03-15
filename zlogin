@@ -12,3 +12,5 @@ firefox_path="$(command -v firefox)"
 if [[ $firefox_path ]]; then
 	export BROWSER="$firefox_path"
 fi
+
+source $HOME/.profile
