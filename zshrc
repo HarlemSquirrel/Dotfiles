@@ -91,6 +91,19 @@ export MAKEFLAGS="-j$(nproc)"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+function curltime() {
+  curl --write-out @- -s "$1" <<'EOF'
+    time_namelookup:  %{time_namelookup}\n
+       time_connect:  %{time_connect}\n
+    time_appconnect:  %{time_appconnect}\n
+   time_pretransfer:  %{time_pretransfer}\n
+      time_redirect:  %{time_redirect}\n
+ time_starttransfer:  %{time_starttransfer}\n
+                    ----------\n
+         time_total:  %{time_total}\n
+EOF
+}
+
 function update_tutanota_appimage() {
   cd ~
   wget -N https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage
