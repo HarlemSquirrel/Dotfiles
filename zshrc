@@ -132,3 +132,5 @@ fi
 # Weather
 alias weather-hawley="curl \"wttr.in/Hawley+PA\""
 alias weather-nyc="curl wttr.in/NYC"
+
+alias open="xdg-open"
