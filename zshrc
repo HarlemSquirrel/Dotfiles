@@ -79,6 +79,10 @@ export EDITOR='vim'
 # export ARCHFLAGS="-arch x86_64"
 export MAKEFLAGS="-j$(nproc)"
 
+# glib setting for Ruby
+# https://devcenter.heroku.com/changelog-items/1683
+#export MALLOC_ARENA_MAX=2
+
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
@@ -128,6 +132,8 @@ if [ -f "$HOME/.nvm" ]; then
 elif [ -f /usr/share/nvm/init-nvm.sh ]; then
   source /usr/share/nvm/init-nvm.sh
 fi
+
+alias open="xdg-open"
 
 # Weather
 alias weather-hawley="curl \"wttr.in/Hawley+PA\""
