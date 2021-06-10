@@ -108,6 +108,13 @@ function curltime() {
 EOF
 }
 
+function upto5xdo () {
+  for i in `seq 5` ; do
+    $@
+    [[ ! $? = 0 ]] && break
+  done
+}
+
 function update_tutanota_appimage() {
   cd ~
   wget -N https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage
@@ -134,6 +141,9 @@ elif [ -f /usr/share/nvm/init-nvm.sh ]; then
 fi
 
 alias open="xdg-open"
+
+# Git
+alias git-log-for-release="git log --pretty=format:'- %b [(%cn) %s]' $(git describe --tags --abbrev=0)..master | grep 'Merge pull request\|#[0-9][0-9][0-9][0-9]'"
 
 # Weather
 alias weather-hawley="curl \"wttr.in/Hawley+PA\""
