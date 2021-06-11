@@ -142,8 +142,15 @@ fi
 
 alias open="xdg-open"
 
+##
+# Diagnostics
+alias curltime="curl -w \"\n       connect: %{time_connect}s\nstart_transfer: %{time_starttransfer}s\n         total: %{time_total}s\n\" --head"
+
+##
 # Git
-alias git-log-for-release="git log --pretty=format:'- %b [(%cn) %s]' $(git describe --tags --abbrev=0)..master | grep 'Merge pull request\|#[0-9][0-9][0-9][0-9]'"
+function git_log_for_release () {
+  git log --pretty=format:'- %b [(%cn) %s]' $(git describe --tags --abbrev=0)..HEAD | grep 'Merge pull request\|#[0-9][0-9][0-9][0-9]'
+}
 
 # Weather
 alias weather-hawley="curl \"wttr.in/Hawley+PA\""
