@@ -5,3 +5,7 @@
 	ff = only
 [color]
 	ui = auto
+[init]
+	defaultBranch = main
+[fetch]
+	pruneTags = true
