@@ -1,3 +1,4 @@
+source $HOME/.profile
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -12,5 +13,3 @@ firefox_path="$(command -v firefox)"
 if [[ $firefox_path ]]; then
 	export BROWSER="$firefox_path"
 fi
-
-source $HOME/.profile
