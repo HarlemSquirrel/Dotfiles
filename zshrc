@@ -154,6 +154,7 @@ function git_log_for_release () {
 
 # Weather
 alias weather-hawley="curl \"wttr.in/Hawley+PA\""
+alias weather-home="curl \"https://wttr.in/Peacedale+Preserve+PA\""
 alias weather-nyc="curl wttr.in/NYC"
 
 alias open="xdg-open"
