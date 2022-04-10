@@ -1,6 +1,7 @@
 [user]
 	email = harlemsquirrel@mccormack.tech
 	name = Kevin McCormack
+	signingKey = 5138D102CBFEF3B62FFC73C9F4DC706CFBFB9C33
 [pull]
 	ff = only
 [color]
