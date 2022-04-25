@@ -1,0 +1,6 @@
+-- Display query times for all queries
+\timing
+
+-- Expanded table format
+\x auto
+
