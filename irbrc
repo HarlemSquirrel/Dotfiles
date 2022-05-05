@@ -2,6 +2,8 @@
 # IRB initialization
 # https://ruby-doc.org/stdlib/libdoc/irb/rdoc/IRB.html
 
+#IRB.conf[:USE_AUTOCOMPLETE] = false
+
 # https://github.com/amazing-print/amazing_print
 if Dir.exist? File.join(Dir.home, 'code/amazing_print/lib/amazing_print')
   # Load from local source code
