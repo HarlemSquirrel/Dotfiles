@@ -1,5 +1,8 @@
 source $HOME/.profile
 
+# Rust lang
+export PATH="$PATH:$HOME/.cargo/bin"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
