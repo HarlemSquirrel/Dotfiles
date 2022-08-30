@@ -12,6 +12,7 @@ else
 end
 
 AmazingPrint.defaults = {
-  indent: 2
+  indent: 2,
+  ruby19_syntax: true
 }
 AmazingPrint.pry!
