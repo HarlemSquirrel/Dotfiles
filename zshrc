@@ -152,6 +152,32 @@ function git_log_for_release () {
   git log --pretty=format:'- %b [(%cn) %s]' $(git describe --tags --abbrev=0)..HEAD | grep 'Merge pull request\|#[0-9][0-9][0-9][0-9]'
 }
 
+##
+# System update
+function supdate () {
+  printf "\n  🚀 Initializing system update...\n\n"
+
+  if command -v apt >/dev/null 2>&1; then
+    sudo apt update -qq && sudo apt full-upgrade
+  fi
+
+  if command -v pacman >/dev/null 2>&1; then
+    sudo pacman -Syu
+  fi
+
+  if command -v flatpak >/dev/null 2>&1; then
+    flatpak update
+  fi
+
+  if command -v snap >/dev/null 2>&1; then
+    sudo snap refresh
+  fi
+
+  if [[ -f /var/run/reboot-required ]]; then
+    printf "\n  🔄 Reboot required.\n\n"
+  fi
+}
+
 # Weather
 alias weather-hawley="curl \"wttr.in/Hawley+PA\""
 alias weather-home="curl \"https://wttr.in/Peacedale+Preserve+PA\""
