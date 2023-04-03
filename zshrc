@@ -161,6 +161,11 @@ function supdate () {
     sudo apt update -qq && sudo apt full-upgrade
   fi
 
+  if command -v brew >/dev/null 2>&1; then
+    brew update
+  fi
+
+
   if command -v pacman >/dev/null 2>&1; then
     sudo pacman -Syu
   fi
