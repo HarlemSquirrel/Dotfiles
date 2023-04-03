@@ -155,26 +155,31 @@ function git_log_for_release () {
 ##
 # System update
 function supdate () {
-  printf "\n  🚀 Initializing system update...\n\n"
+  printf "\n  🚀 Initializing system update...\n"
 
   if command -v apt >/dev/null 2>&1; then
+    printf "\n  🍕 apt\n"
     sudo apt update -qq && sudo apt full-upgrade
   fi
 
   if command -v brew >/dev/null 2>&1; then
+    printf "\n  🍺 brew\n"
     brew update
   fi
 
 
   if command -v pacman >/dev/null 2>&1; then
+    printf "\n  🥃 pacman\n"
     sudo pacman -Syu
   fi
 
   if command -v flatpak >/dev/null 2>&1; then
+    printf "\n  📦 flatpak\n"
     flatpak update
   fi
 
   if command -v snap >/dev/null 2>&1; then
+    printf "\n  ❇️  snap\n"
     sudo snap refresh
   fi
 
