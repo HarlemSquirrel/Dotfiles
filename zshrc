@@ -151,6 +151,9 @@ alias curltime="curl -w \"\n       connect: %{time_connect}s\nstart_transfer: %{
 function git_log_for_release () {
   git log --pretty=format:'- %b [(%cn) %s]' $(git describe --tags --abbrev=0)..HEAD | grep 'Merge pull request\|#[0-9][0-9][0-9][0-9]'
 }
+function git_grep_prod () {
+  git --no-pager log --oneline origin/production --grep="$1"
+}
 
 ##
 # System update
@@ -159,7 +162,7 @@ function supdate () {
 
   if command -v apt >/dev/null 2>&1; then
     printf "\n  🍕 apt\n"
-    sudo apt update -qq && sudo apt full-upgrade
+    sudo apt update && sudo apt full-upgrade
   fi
 
   if command -v brew >/dev/null 2>&1; then
