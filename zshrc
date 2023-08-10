@@ -168,6 +168,7 @@ function supdate () {
   if command -v brew >/dev/null 2>&1; then
     printf "\n  🍺 brew\n"
     brew update
+    brew upgrade
   fi
 
 
