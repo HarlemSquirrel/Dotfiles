@@ -79,6 +79,10 @@ export EDITOR='vim'
 # export ARCHFLAGS="-arch x86_64"
 export MAKEFLAGS="-j$(nproc)"
 
+# Enable MangoHud for Vulkan games
+# https://github.com/flightlessmango/MangoHud
+MANGOHUD=1
+
 # glib setting for Ruby
 # https://devcenter.heroku.com/changelog-items/1683
 #export MALLOC_ARENA_MAX=2
