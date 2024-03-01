@@ -18,11 +18,13 @@ dotfiles_dir = "Dotfiles"
 # sway = { source = "sway", target = ".config/sway" }
 
 # You can have as many dot entry as you want, linking files or directories
-alacritty = { source = "config/alacritty/alacritty.yml", target = ".config/alacritty/alacritty.yml" }
-fonts = { source = "config/fontconfig/fonts.conf", target = ".config/fontconfig/fonts.conf" }
+alacritty = { source = "config/alacritty", target = ".config/alacritty" }
+fonts = { source = "config/fontconfig", target = ".config/fontconfig" }
 editorconfig = { source = "editorconfig", target = ".editorconfig" }
 gitconfig = { source = "gitconfig", target = ".gitconfig" }
 irbrc = { source = "irbrc", target = ".irbrc" }
+mangohud = { source = "config/MangoHud", target = ".config/MangoHud" }
+pryrc = { source = "pryrc", target = ".pryrc" }
 vimrc = { source = "vimrc", target = ".vimrc" }
 zlogin = { source = "zlogin", target = ".zlogin" }
 zshenv = { source = "zshenv", target = ".zshenv" }

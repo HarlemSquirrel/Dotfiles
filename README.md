@@ -13,3 +13,16 @@ My set of personalized dot files managed with [`dotfiles`](https://pypi.org/proj
 ### List managed dot files
 
     dotfiles --list
+
+## Toml Bombadil
+
+Alternative dotfiles manager.
+https://github.com/oknozor/toml-bombadil
+
+### Install from main
+
+    cargo install toml-bombadil --git https://github.com/oknozor/toml-bombadil.git --branch main
+
+### Set up the links
+
+    bombadil link
