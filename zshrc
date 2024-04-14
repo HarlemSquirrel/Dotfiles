@@ -181,6 +181,11 @@ function supdate () {
     sudo pacman -Syu
   fi
 
+  if command -v pikaur >/dev/null 2>&1; then
+    printf "\n  ⛏️ pikaur -Syu\n"
+    pikaur -Syu
+  fi
+
   if command -v flatpak >/dev/null 2>&1; then
     printf "\n  📦 flatpak\n"
     flatpak update
