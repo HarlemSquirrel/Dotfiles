@@ -25,6 +25,7 @@ gitconfig = { source = "gitconfig", target = ".gitconfig" }
 irbrc = { source = "irbrc", target = ".irbrc" }
 mangohud = { source = "config/MangoHud", target = ".config/MangoHud" }
 pryrc = { source = "pryrc", target = ".pryrc" }
+starship = { source = "config/starship.toml", target = ".config/starship.toml" }
 vimrc = { source = "vimrc", target = ".vimrc" }
 zlogin = { source = "zlogin", target = ".zlogin" }
 zshenv = { source = "zshenv", target = ".zshenv" }
