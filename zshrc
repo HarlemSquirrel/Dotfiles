@@ -170,6 +170,11 @@ function supdate () {
   if command -v apt >/dev/null 2>&1; then
     printf "\n  🍕 apt\n"
     sudo apt update && sudo apt full-upgrade
+
+    if [[ -f ~/code/scripts/update_zoom.sh ]]; then
+    printf "\n  update_zoom.sh\n"
+      ~/code/scripts/update_zoom.sh
+    fi
   fi
 
   if command -v brew >/dev/null 2>&1; then
