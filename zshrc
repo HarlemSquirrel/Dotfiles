@@ -183,16 +183,14 @@ function supdate () {
     brew upgrade
   fi
 
-
-  if command -v pacman >/dev/null 2>&1; then
-    printf "\n  🥃 pacman\n"
+  if command -v paru >/dev/null 2>&1; then
+    printf "\n  👾 paru\n"
+    sudo paru -Syu
+  elif command -v pacman >/dev/null 2>&1; then
+    printf "\n  👾 pacman\n"
     sudo pacman -Syu
   fi
 
-  if command -v pikaur >/dev/null 2>&1; then
-    printf "\n  ⛏️ pikaur -Syu\n"
-    pikaur -Syu
-  fi
 
   if command -v flatpak >/dev/null 2>&1; then
     printf "\n  📦 flatpak\n"
