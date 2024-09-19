@@ -185,7 +185,7 @@ function supdate () {
 
   if command -v paru >/dev/null 2>&1; then
     printf "\n  👾 paru\n"
-    sudo paru -Syu
+    paru -Syu
   elif command -v pacman >/dev/null 2>&1; then
     printf "\n  👾 pacman\n"
     sudo pacman -Syu
