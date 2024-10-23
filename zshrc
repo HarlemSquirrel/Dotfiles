@@ -162,7 +162,7 @@ function git_grep_prod () {
   git --no-pager log --oneline origin/production --grep="$1"
 }
 function git_grep_staging () {
-  git --no-pager log --oneline origin/production --grep="$1"
+  git --no-pager log --oneline origin/staging --grep="$1"
 }
 
 ##
