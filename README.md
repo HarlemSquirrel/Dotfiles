@@ -21,7 +21,7 @@ https://github.com/oknozor/toml-bombadil
 
 ### Install from main
 
-    cargo install toml-bombadil --git https://github.com/oknozor/toml-bombadil.git --branch main
+    cargo install toml-bombadil
 
 ### Set up the links
 
