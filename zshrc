@@ -203,6 +203,11 @@ function supdate () {
     flatpak update
   fi
 
+  if command -v mise >/dev/null 2>&1; then
+    printf "\n  ⚡  mise\n"
+    mise self-update
+  fi
+
   if command -v snap >/dev/null 2>&1; then
     printf "\n  ❇️  snap\n"
     sudo snap refresh
