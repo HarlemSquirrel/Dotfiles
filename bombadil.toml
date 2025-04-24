@@ -26,6 +26,7 @@ gitconfig = { source = "gitconfig", target = ".gitconfig" }
 irbrc = { source = "irbrc", target = ".irbrc" }
 mangohud = { source = "config/MangoHud", target = ".config/MangoHud" }
 mise = { source = "config/mise", target = ".config/mise" }
+bottom = { source = "config/bottom", target = ".config/bottom" }
 pipewire = { source = "config/pipewire", target = ".config/pipewire"}
 pryrc = { source = "pryrc", target = ".pryrc" }
 starship = { source = "config/starship.toml", target = ".config/starship.toml" }
