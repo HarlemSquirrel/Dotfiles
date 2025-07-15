@@ -1,7 +1,7 @@
 [tools]
 java = "corretto-21"
-node = "22"
+node = "22.16"
 ruby = "3.4.2"
 
 [settings]
-idiomatic_version_file_enable_tools = ["ruby"]
+idiomatic_version_file_enable_tools = ["node", "ruby"]
