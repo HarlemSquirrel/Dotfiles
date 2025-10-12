@@ -128,6 +128,16 @@ function update_tutanota_appimage() {
   cd -
 }
 
+function stopwatch() {
+  start=$(date +%s);
+  while true; do
+    time="$(( $(date +%s) - $start))"
+    #printf '%s\r' "$(date -u -d "@$time" +%H:%M:%S)"
+    echo -ne "\r$(date -u --date "@$time" +%H:%M:%S)";
+    sleep 0.1
+  done;
+}
+
 alias reinstall-grub="sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ArchLinux"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
