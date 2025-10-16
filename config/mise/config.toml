@@ -1,6 +1,7 @@
 [tools]
 java = "corretto-21"
 node = "22.16"
+python = "3.13"
 ruby = "3.4.2"
 
 [settings]
