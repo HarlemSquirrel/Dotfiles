@@ -1,0 +1,6 @@
+## Configuration for Cargo
+# https://doc.rust-lang.org/cargo/reference/config.html
+
+# https://github.com/rust-lang/cargo/issues/13457#issuecomment-2063947062
+cargo-net.git-fetch-with-cli = true
+registries.crates-io.protocol = "git"
