@@ -223,6 +223,16 @@ function supdate () {
     sudo snap refresh
   fi
 
+  if [[ -d ~/Dotfiles ]]; then
+    printf "\n  🫓 dotfiles\n"
+    cd ~/Dotfiles
+    git pull
+    if command -v bombadil >/dev/null 2>&1; then
+      bombadil link
+    fi
+    cd -
+  fi
+
   if [[ -f /var/run/reboot-required ]]; then
     printf "\n  🔄 Reboot required.\n\n"
   fi
