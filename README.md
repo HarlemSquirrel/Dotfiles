@@ -1,5 +1,28 @@
 # Dotfiles
 
+There's two options here while I currently prefer bombadil.
+
+## Toml Bombadil
+
+Alternative dotfiles manager.
+https://github.com/oknozor/toml-bombadil
+
+### Install from main
+
+    cd
+
+    git clone git@github.com:HarlemSquirrel/Dotfiles.git
+
+    cargo install toml-bombadil
+
+    bombadil install ~/Dotfiles
+
+### Set up the links
+
+    bombadil link
+
+## dotfiles
+
 My set of personalized dot files managed with [`dotfiles`](https://pypi.org/project/dotfiles/)
 
 ### Installation
@@ -13,16 +36,3 @@ My set of personalized dot files managed with [`dotfiles`](https://pypi.org/proj
 ### List managed dot files
 
     dotfiles --list
-
-## Toml Bombadil
-
-Alternative dotfiles manager.
-https://github.com/oknozor/toml-bombadil
-
-### Install from main
-
-    cargo install toml-bombadil
-
-### Set up the links
-
-    bombadil link
