@@ -238,6 +238,10 @@ function supdate () {
   fi
 }
 
+# Gearlever
+# https://github.com/mijorus/gearlever
+alias gearlever='flatpak run it.mijorus.gearlever'
+
 # Weather
 alias weather-hawley="curl \"wttr.in/Hawley+PA\""
 alias weather-home="curl \"https://wttr.in/Peacedale+Preserve+PA\""
