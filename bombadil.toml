@@ -20,6 +20,8 @@ dotfiles_dir = "Dotfiles"
 # You can have as many dot entry as you want, linking files or directories
 alacritty = { source = "config/alacritty", target = ".config/alacritty" }
 cargo = { source = "cargo/config.toml", target = ".cargo/config.toml"}
+copilot_agents = { source = "copilot/agents", target = ".copilot/agents" }
+copilot_config = { source = "copilot/config.json", target = ".copilot/config.json" }
 environment = { source = "config/environment.d", target = ".config/environment.d"}
 fonts = { source = "config/fontconfig", target = ".config/fontconfig" }
 editorconfig = { source = "editorconfig", target = ".editorconfig" }
